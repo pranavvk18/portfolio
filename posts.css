@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Source+Code+Pro:wght@400&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.post-box {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 600px;
+    font-size: 28px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#animated-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor effect */
+    display: inline-block;
+    font-size: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post-box {
+        font-size: 24px;
+        padding: 15px;
+    }
+    #animated-text {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-box {
+        font-size: 20px;
+        padding: 15px;
+    }
+    #animated-text {
+        font-size: 22px;
+    }
+}

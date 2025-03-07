@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "CMU Serif Roman", serif;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #171717;
+    color: #fff;
+}
+
+.section {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #171717;
+    overflow-x: auto; /* Allows scrolling if necessary */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Responsive Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allows columns to resize dynamically */
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #fff;
+    vertical-align: top;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Adjust column widths */
+th:nth-child(1), td:nth-child(1) { /* Project Name */
+    width: 20%;
+    min-width: 150px;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Description */
+    width: 50%;
+    min-width: 250px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+th:nth-child(3), td:nth-child(3) { /* Tools */
+    width: 30%;
+    min-width: 120px;
+    text-align: center;
+}
+
+th {
+    background-color: #171717;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+td img {
+    display: block;
+    margin: auto;
+    max-width: 40px; /* Limits icon size */
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto; /* Enables horizontal scrolling */
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    td:nth-child(2) { /* Ensures description text is readable */
+        min-width: 300px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    td:nth-child(2) { 
+        min-width: 280px;
+        max-width: 90%;
+    }
+}

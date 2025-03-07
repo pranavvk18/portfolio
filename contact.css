@@ -1,0 +1,45 @@
+body {
+    background-color: #171717;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-box {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.email {
+    font-size: 1.2em;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .email {
+        font-size: 1em;
+    }
+    .contact-box {
+        padding: 15px;
+    }
+}
